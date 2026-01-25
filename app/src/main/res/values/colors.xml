@@ -1,45 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- https://www.materialpalette.com/teal/deep-orange -->
+    <!-- DeenShield Primary Colors - Modern Islamic Blue/Green -->
+    <color name="colorTealPrimary">#1B6B5E</color>
+    <color name="colorTealPrimaryDark">#0F4C42</color>
+    <color name="colorTealAccent">#26D07C</color>
+    <color name="colorTealOn">#1B6B5E</color>
+    <color name="colorTealOff">#FF6B6B</color>
 
-    <color name="colorTealPrimary">#009688</color>
-    <color name="colorTealPrimaryDark">#00796B</color>
-    <color name="colorTealAccent">#FF5722</color>
-    <color name="colorTealOn">#009688</color>
-    <color name="colorTealOff">#FF5722</color>
+    <!-- Material Blue - Elegant Professional -->
+    <color name="colorBluePrimary">#1E88E5</color>
+    <color name="colorBluePrimaryDark">#1565C0</color>
+    <color name="colorBlueAccent">#00BCD4</color>
+    <color name="colorBlueOn">#1E88E5</color>
+    <color name="colorBlueOff">#FF6B6B</color>
 
-    <color name="colorBluePrimary">#2196F3</color>
-    <color name="colorBluePrimaryDark">#1976D2</color>
-    <color name="colorBlueAccent">#FF5722</color>
-    <color name="colorBlueOn">#2196F3</color>
-    <color name="colorBlueOff">#FF5722</color>
+    <!-- Deep Purple - Royal -->
+    <color name="colorPurplePrimary">#7E57C2</color>
+    <color name="colorPurplePrimaryDark">#5E35B1</color>
+    <color name="colorPurpleAccent">#BA68C8</color>
+    <color name="colorPurpleOn">#7E57C2</color>
+    <color name="colorPurpleOff">#FF6B6B</color>
 
-    <color name="colorPurplePrimary">#9C27B0</color>
-    <color name="colorPurplePrimaryDark">#7B1FA2</color>
-    <color name="colorPurpleAccent">#FF5252</color>
-    <color name="colorPurpleOn">#9C27B0</color>
-    <color name="colorPurpleOff">#FF5252</color>
+    <!-- Amber/Gold - Premium -->
+    <color name="colorAmberPrimary">#FFA726</color>
+    <color name="colorAmberPrimaryDark">#F57C00</color>
+    <color name="colorAmberAccent">#00BCD4</color>
+    <color name="colorAmberOn">#FFC107</color>
+    <color name="colorAmberOff">#FF6B6B</color>
 
-    <color name="colorAmberPrimary">#FFC107</color>
-    <color name="colorAmberPrimaryDark">#FFA000</color>
-    <color name="colorAmberAccent">#448AFF</color>
-    <color name="colorAmberOn">#448AFF</color>
-    <color name="colorAmberOff">#FFC107</color>
+    <!-- Deep Orange - Warm -->
+    <color name="colorOrangePrimary">#EF5350</color>
+    <color name="colorOrangePrimaryDark">#C62828</color>
+    <color name="colorOrangeAccent">#26A69A</color>
+    <color name="colorOrangeOn">#EF5350</color>
+    <color name="colorOrangeOff">#FF6B6B</color>
 
-    <color name="colorOrangePrimary">#FF5722</color>
-    <color name="colorOrangePrimaryDark">#E64A19</color>
-    <color name="colorOrangeAccent">#607D8B</color>
-    <color name="colorOrangeOn">#607D8B</color>
-    <color name="colorOrangeOff">#FF5722</color>
+    <!-- Forest Green - Natural -->
+    <color name="colorGreenPrimary">#43A047</color>
+    <color name="colorGreenPrimaryDark">#2E7D32</color>
+    <color name="colorGreenAccent">#66BB6A</color>
+    <color name="colorGreenOn">#43A047</color>
+    <color name="colorGreenOff">#FF6B6B</color>
 
-    <color name="colorGreenPrimary">#4CAF50</color>
-    <color name="colorGreenPrimaryDark">#388E3C</color>
-    <color name="colorGreenAccent">#8BC34A</color>
-    <color name="colorGreenOn">#8BC34A</color>
-    <color name="colorGreenOff">#F44336</color>
+    <!-- Status Colors -->
+    <color name="colorSend">#FF6B6B</color>
+    <color name="colorReceive">#1E88E5</color>
 
-    <color name="colorSend">#FF0000</color>
-    <color name="colorReceive">#0000FF</color>
-
-    <color name="colorGrayed">#AAAAAA</color>
+    <!-- Utility Colors -->
+    <color name="colorGrayed">#9E9E9E</color>
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorError">#FF6B6B</color>
+    <color name="colorSuccess">#4CAF50</color>
+    <color name="colorWarning">#FFA726</color>
+    <color name="colorInfo">#1E88E5</color>
 </resources>

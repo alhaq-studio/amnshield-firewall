@@ -20,8 +20,8 @@
 -renamesourcefileattribute SourceFile
 -keepattributes SourceFile,LineNumberTable
 
-#NetGuard
--keepnames class eu.faircode.netguard.** { *; }
+#DeenShield AppControl
+-keepnames class com.guardpro.alhaq.** { *; }
 
 #JNI
 -keepclasseswithmembernames class * {
@@ -29,19 +29,19 @@
 }
 
 #JNI callbacks
--keep class eu.faircode.netguard.Allowed { *; }
--keep class eu.faircode.netguard.Packet { *; }
--keep class eu.faircode.netguard.ResourceRecord { *; }
--keep class eu.faircode.netguard.Usage { *; }
--keep class eu.faircode.netguard.ServiceSinkhole {
+-keep class com.guardpro.alhaq.Allowed { *; }
+-keep class com.guardpro.alhaq.Packet { *; }
+-keep class com.guardpro.alhaq.ResourceRecord { *; }
+-keep class com.guardpro.alhaq.Usage { *; }
+-keep class com.guardpro.alhaq.ServiceSinkhole {
     void nativeExit(java.lang.String);
     void nativeError(int, java.lang.String);
-    void logPacket(eu.faircode.netguard.Packet);
-    void dnsResolved(eu.faircode.netguard.ResourceRecord);
+    void logPacket(com.guardpro.alhaq.Packet);
+    void dnsResolved(com.guardpro.alhaq.ResourceRecord);
     boolean isDomainBlocked(java.lang.String);
     int getUidQ(int, int, java.lang.String, int, java.lang.String, int);
-    eu.faircode.netguard.Allowed isAddressAllowed(eu.faircode.netguard.Packet);
-    void accountUsage(eu.faircode.netguard.Usage);
+    com.guardpro.alhaq.Allowed isAddressAllowed(com.guardpro.alhaq.Packet);
+    void accountUsage(com.guardpro.alhaq.Usage);
 }
 
 #AndroidX

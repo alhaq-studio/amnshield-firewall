@@ -3,7 +3,7 @@
     <string name="app_description">Нетгард нуди једноставне и напредне начине блокирања приступа интернету без потребе за рутовањем. Апликацијама и адресама се може појединачно дозволити или одбити приступ бежичној и/или мобилној вези.</string>
     <string name="app_android">Нетгард захтева Андроид 5.1 или новији</string>
     <string name="app_xposed">\'Xposed\' изазива превише грешака које могу резултирати да Нетгард буде уклоњен са Гугл плеј продвнице. Стога, Нетгард није подржан док је \'Xposed\' инсталиран</string>
-    <string name="app_privacy"><a href="https://www.netguard.me/privacy/">Политика приватности</a></string>
+    <string name="app_privacy"><a href="https://www.netblock.me/privacy/">Политика приватности</a></string>
     <string name="app_first">Огромна пажња је посвећена развоју и тестирању Нетгард апликације. Међутим, немогуће је гарантовати да ће Нетгард радити исправно на сваком уређају.</string>
     <string name="app_agree">Слажем се</string>
     <string name="app_disagree">Не слажем се</string>
@@ -169,7 +169,7 @@
     <string name="msg_error">Дошло је до неочекиване грешке: %s</string>
     <string name="msg_start_failed">Андроид тренутно одбија да покрене ВПН сервис. Могуће је да је због грешке у вашој верзији Андроида.</string>
     <string name="msg_try">Пробајте Нетгард</string>
-    <string name="msg_terms">Донирајући, сагласни сте са <a href="http://www.netguard.me/#terms">одредбама и условима</a></string>
+    <string name="msg_terms">Донирајући, сагласни сте са <a href="http://www.netblock.me/#terms">одредбама и условима</a></string>
     <string name="msg_dimming">Ако на следећем дијалогу не можете да изаберете „У реду“, могуће је да нека апликација управља екраном.</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ MB/дневно</string>
     <string name="msg_kb">%1$7.3f▲ %2$7.3f▼ KB</string>

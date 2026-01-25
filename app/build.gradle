@@ -2,18 +2,20 @@ apply plugin: 'com.android.application'
 
 def keystorePropertiesFile = rootProject.file("keystore.properties")
 def keystoreProperties = new Properties()
-keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
 
 android {
-    compileSdkVersion = 35
+    compileSdkVersion 35
 
     defaultConfig {
-        applicationId = "eu.faircode.netguard"
-        versionName = "2.334"
+        applicationId = "org.alhaq.deenshield.netblock"
+        versionName = "0.1.24"
         minSdkVersion 22
         targetSdkVersion 35
-        versionCode = 2025101201
-        archivesBaseName = "NetGuard-v$versionName"
+        versionCode = 20260124
+        archivesBaseName = "Deenshield NetBlock-v$versionName"
 
         externalNativeBuild {
             cmake {
@@ -37,10 +39,12 @@ android {
     }
     signingConfigs {
         release {
-            storeFile file(keystoreProperties['storeFile'])
-            storePassword keystoreProperties['storePassword']
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
+            if (keystorePropertiesFile.exists()) {
+                storeFile file(keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
+                keyAlias keystoreProperties['keyAlias']
+                keyPassword keystoreProperties['keyPassword']
+            }
         }
     }
 
@@ -58,7 +62,7 @@ android {
             signingConfig signingConfigs.release
             buildConfigField "boolean", "PLAY_STORE_RELEASE", "false"
             buildConfigField "String", "HOSTS_FILE_URI", "\"https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts\""
-            buildConfigField "String", "GITHUB_LATEST_API", "\"https://api.github.com/repos/M66B/NetGuard/releases/latest\""
+            buildConfigField "String", "GITHUB_LATEST_API", "\"https://api.github.com/repos/M66B/DeenShield AppControl/releases/latest\""
         }
         play {
             minifyEnabled = true
@@ -69,11 +73,11 @@ android {
             buildConfigField "String", "GITHUB_LATEST_API", "\"\""
         }
         debug {
-            minifyEnabled = true
-            proguardFiles.add(file('proguard-rules.pro'))
+            minifyEnabled = false
+            debuggable = true
             buildConfigField "boolean", "PLAY_STORE_RELEASE", "false"
             buildConfigField "String", "HOSTS_FILE_URI", "\"https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts\""
-            buildConfigField "String", "GITHUB_LATEST_API", "\"https://api.github.com/repos/M66B/NetGuard/releases/latest\""
+            buildConfigField "String", "GITHUB_LATEST_API", "\"https://api.github.com/repos/M66B/DeenShield AppControl/releases/latest\""
         }
     }
 
@@ -85,7 +89,7 @@ android {
     lint {
         disable 'MissingTranslation'
     }
-    namespace 'eu.faircode.netguard'
+    namespace 'org.alhaq.deenshield.netblock'
     buildFeatures {
         aidl true
     }

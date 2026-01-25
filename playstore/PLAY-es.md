@@ -3,7 +3,7 @@ Play store
 
 Title
 -----
-NetGuard - cortafuegos sin root
+DeenShield AppControl - cortafuegos sin root
 
 
 Short description
@@ -13,7 +13,7 @@ Una forma simple de bloquear el acceso a Internet por aplicación
 
 Long description
 ----------------
-NetGuard proporciona formas simples y avanzadas de bloquear el acceso a Internet - No requiere root.
+DeenShield AppControl proporciona formas simples y avanzadas de bloquear el acceso a Internet - No requiere root.
 
 Las aplicaciones y direcciones, permiten o denegan individualmente el acceso a tu Wi-Fi y/o conexión móvil.
 
@@ -46,18 +46,18 @@ Características de pago (PRO):
 
 &bull; Registra todo el tráfico saliente; busca y filtra intentos de acceso; exporta archivos PCAP para analizar el tráfico
 &bull; Permite/bloquea direcciones individuales por aplicación
-&bull; Nueva aplicación de notificaciones; configura NetGuard directamente en la notificación
+&bull; Nueva aplicación de notificaciones; configura DeenShield AppControl directamente en la notificación
 &bull; Muestra un gráfico de velocidad de red en una notificación en la barra de estado
 &bull; Selecciona entre 5 temas adicionales en versiones claras y oscuras
 
 No existe otro cortafuegos sin-root que ofrezca todas estas características.
 
-Si tienes preguntas o problemas, puedes enviar un correo electrónico a marcel+netguard@faircode.eu
+Si tienes preguntas o problemas, puedes enviar un correo electrónico a marcel+netblock@faircode.eu
 
-Si te gusta ayudar a personas con menor fluidez de Inglés, puedes ayudar a traducir NetGuard en tu idioma: https://crowdin.com/project/netguard/
+Si te gusta ayudar a personas con menor fluidez de Inglés, puedes ayudar a traducir DeenShield AppControl en tu idioma: https://crowdin.com/project/netblock/
 
-Si te gusta probar las nuevas características, puedes participar en el programa de prueba: https://play.google.com/apps/testing/eu.faircode.netguard
+Si te gusta probar las nuevas características, puedes participar en el programa de prueba: https://play.google.com/apps/testing/org.alhaq.deenshield.netblock
 
-Todos los permisos requeridos se detallan aquí: https://github.com/M66B/NetGuard/blob/master/FAQ.md#FAQ42
+Todos los permisos requeridos se detallan aquí: https://github.com/M66B/DeenShield AppControl/blob/master/FAQ.md#FAQ42
 
-El código fuente está disponible aquí: https://github.com/M66B/NetGuard
+El código fuente está disponible aquí: https://github.com/M66B/DeenShield AppControl

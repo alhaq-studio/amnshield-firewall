@@ -26,12 +26,12 @@
     </queries-->
 
     <permission
-        android:name="eu.faircode.netguard.permission.ADMIN"
+        android:name="org.alhaq.deenshield.netblock.permission.ADMIN"
         android:description="@string/app_description"
         android:label="@string/app_name"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="eu.faircode.netguard.permission.ADMIN" />
+    <uses-permission android:name="org.alhaq.deenshield.netblock.permission.ADMIN" />
 
     <uses-feature
         android:name="android.hardware.wifi"
@@ -47,9 +47,10 @@
         android:required="false" />
 
     <application
-        android:name="ApplicationEx"
+        android:name="org.alhaq.deenshield.netblock.ApplicationEx"
         android:allowBackup="false"
         android:appCategory="productivity"
+        android:debuggable="true"
         android:description="@string/app_description"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -64,7 +65,7 @@
             android:value="2.1" />
 
         <activity
-            android:name=".ActivityMain"
+            android:name="org.alhaq.deenshield.netblock.ActivityMain"
             android:configChanges="orientation|screenSize"
             android:exported="true"
             android:label="@string/app_name"
@@ -85,7 +86,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="www.netguard.me"
+                    android:host="www.netblock.me"
                     android:pathPrefix="/"
                     android:scheme="https" />
             </intent-filter-->
@@ -96,7 +97,7 @@
         </activity>
 
         <activity
-            android:name=".ActivitySettings"
+            android:name="org.alhaq.deenshield.netblock.ActivitySettings"
             android:configChanges="orientation|screenSize"
             android:exported="true"
             android:label="@string/menu_settings"
@@ -115,7 +116,7 @@
         </activity>
 
         <activity
-            android:name=".ActivityLog"
+            android:name="org.alhaq.deenshield.netblock.ActivityLog"
             android:configChanges="orientation|screenSize"
             android:label="@string/menu_log"
             android:parentActivityName=".ActivityMain">
@@ -125,7 +126,7 @@
         </activity>
 
         <activity
-            android:name=".ActivityPro"
+            android:name="org.alhaq.deenshield.netblock.ActivityPro"
             android:configChanges="orientation|screenSize"
             android:label="@string/title_pro"
             android:parentActivityName=".ActivityMain">
@@ -135,7 +136,7 @@
         </activity>
 
         <activity
-            android:name=".ActivityDns"
+            android:name="org.alhaq.deenshield.netblock.ActivityDns"
             android:configChanges="orientation|screenSize"
             android:label="@string/setting_show_resolved"
             android:parentActivityName=".ActivitySettings">
@@ -145,7 +146,7 @@
         </activity>
 
         <activity
-            android:name=".ActivityForwarding"
+            android:name="org.alhaq.deenshield.netblock.ActivityForwarding"
             android:configChanges="orientation|screenSize"
             android:label="@string/setting_forwarding"
             android:parentActivityName=".ActivitySettings">
@@ -155,46 +156,66 @@
         </activity>
 
         <activity
-            android:name=".ActivityForwardApproval"
+            android:name="org.alhaq.deenshield.netblock.ActivityHelp"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/help_title"
+            android:parentActivityName=".ActivityMain">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityMain" />
+        </activity>
+
+        <activity
+            android:name="org.alhaq.deenshield.netblock.ActivityFAQ"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/faq_title"
+            android:parentActivityName=".ActivityMain">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityMain" />
+        </activity>
+
+        <activity
+            android:name="org.alhaq.deenshield.netblock.ActivityForwardApproval"
             android:configChanges="orientation|screenSize"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/AppDialog">
             <intent-filter>
-                <action android:name="eu.faircode.netguard.START_PORT_FORWARD" />
-                <action android:name="eu.faircode.netguard.STOP_PORT_FORWARD" />
+                <action android:name="org.alhaq.deenshield.netblock.START_PORT_FORWARD" />
+                <action android:name="org.alhaq.deenshield.netblock.STOP_PORT_FORWARD" />
             </intent-filter>
         </activity>
 
         <service
-            android:name=".ServiceSinkhole"
+            android:name="org.alhaq.deenshield.netblock.ServiceSinkhole"
             android:exported="true"
             android:foregroundServiceType="specialUse"
             android:label="@string/app_name"
             android:permission="android.permission.BIND_VPN_SERVICE">
             <property
                 android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
-                android:value="NetGuard is a firewall app using the Android VPN service to filter traffic on the device. A foreground service is required to process internet traffic in real-time to be able to allow and block traffic as configured by the user of the app. There is no other way to do this, and other foreground service types are either too limited or not appropriate."  />
+                android:value="DeenShield AppControl is a firewall app using the Android VPN service to filter traffic on the device. A foreground service is required to process internet traffic in real-time to be able to allow and block traffic as configured by the user of the app. There is no other way to do this, and other foreground service types are either too limited or not appropriate."  />
             <intent-filter>
                 <action android:name="android.net.VpnService" />
             </intent-filter>
         </service>
 
         <service
-            android:name=".ServiceExternal"
+            android:name="org.alhaq.deenshield.netblock.ServiceExternal"
             android:exported="true"
             android:foregroundServiceType="specialUse"
             android:label="@string/app_name">
             <property
                 android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
-                android:value="NetGuard is a firewall app using the Android VPN service to filter traffic on the device. A foreground service is required to process internet traffic in real-time to be able to allow and block traffic as configured by the user of the app. There is no other way to do this, and other foreground service types are either too limited or not appropriate."  />
+                android:value="DeenShield AppControl is a firewall app using the Android VPN service to filter traffic on the device. A foreground service is required to process internet traffic in real-time to be able to allow and block traffic as configured by the user of the app. There is no other way to do this, and other foreground service types are either too limited or not appropriate."  />
             <intent-filter>
-                <action android:name="eu.faircode.netguard.DOWNLOAD_HOSTS_FILE" />
+                <action android:name="org.alhaq.deenshield.netblock.DOWNLOAD_HOSTS_FILE" />
             </intent-filter>
         </service>
 
         <service
-            android:name=".ServiceTileMain"
+            android:name="org.alhaq.deenshield.netblock.ServiceTileMain"
             android:exported="true"
             android:icon="@drawable/ic_security_white_24dp"
             android:label="@string/app_name"
@@ -205,7 +226,7 @@
         </service>
 
         <service
-            android:name=".ServiceTileGraph"
+            android:name="org.alhaq.deenshield.netblock.ServiceTileGraph"
             android:exported="true"
             android:icon="@drawable/ic_equalizer_white_24dp"
             android:label="@string/setting_stats_category"
@@ -216,7 +237,7 @@
         </service>
 
         <service
-            android:name=".ServiceTileFilter"
+            android:name="org.alhaq.deenshield.netblock.ServiceTileFilter"
             android:exported="true"
             android:icon="@drawable/ic_filter_list_white_24dp"
             android:label="@string/setting_filter"
@@ -227,7 +248,7 @@
         </service>
 
         <service
-            android:name=".ServiceTileLockdown"
+            android:name="org.alhaq.deenshield.netblock.ServiceTileLockdown"
             android:exported="true"
             android:icon="@drawable/ic_lock_outline_white_24dp"
             android:label="@string/setting_lockdown"
@@ -238,7 +259,7 @@
         </service>
 
         <receiver
-            android:name=".ReceiverAutostart"
+            android:name="org.alhaq.deenshield.netblock.ReceiverAutostart"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter android:priority="999">
@@ -248,7 +269,7 @@
         </receiver>
 
         <receiver
-            android:name=".ReceiverPackageRemoved"
+            android:name="org.alhaq.deenshield.netblock.ReceiverPackageRemoved"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED" />
@@ -257,7 +278,7 @@
         </receiver>
 
         <receiver
-            android:name=".WidgetMain"
+            android:name="org.alhaq.deenshield.netblock.WidgetMain"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>
@@ -269,7 +290,7 @@
         </receiver>
 
         <receiver
-            android:name=".WidgetLockdown"
+            android:name="org.alhaq.deenshield.netblock.WidgetLockdown"
             android:exported="true"
             android:label="@string/setting_lockdown">
             <intent-filter>
@@ -281,15 +302,15 @@
         </receiver>
 
         <receiver
-            android:name=".WidgetAdmin"
+            android:name="org.alhaq.deenshield.netblock.WidgetAdmin"
             android:exported="true"
             android:label="@string/app_name"
-            android:permission="eu.faircode.netguard.permission.ADMIN">
+            android:permission="org.alhaq.deenshield.netblock.permission.ADMIN">
             <intent-filter>
-                <action android:name="eu.faircode.netguard.ON" />
-                <action android:name="eu.faircode.netguard.OFF" />
-                <action android:name="eu.faircode.netguard.LOCKDOWN_ON" />
-                <action android:name="eu.faircode.netguard.LOCKDOWN_OFF" />
+                <action android:name="org.alhaq.deenshield.netblock.ON" />
+                <action android:name="org.alhaq.deenshield.netblock.OFF" />
+                <action android:name="org.alhaq.deenshield.netblock.LOCKDOWN_ON" />
+                <action android:name="org.alhaq.deenshield.netblock.LOCKDOWN_OFF" />
             </intent-filter>
         </receiver>
     </application>

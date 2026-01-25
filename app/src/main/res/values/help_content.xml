@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_title">User Guide</string>
+    <string name="help_subtitle">Learn how to use Deenshield AppControl</string>
+    
+    <string name="help_section1_title">Getting Started</string>
+    <string name="help_section1_content">Deenshield AppControl is a powerful no-root firewall that allows you to monitor and control internet access for individual apps.\n\n1. Enable the firewall using the toggle switch in the top bar\n2. Your installed apps will appear in the list\n3. Use the Wi-Fi and mobile icons to control access for each app</string>
+    
+    <string name="help_section2_title">Understanding Colors</string>
+    <string name="help_section2_content">Color indicators show the network access status:\n\n• RED - Internet access denied\n• ORANGE - Partially restricted\n• YELLOW - Limited access\n• GREEN/TEAL - Internet access allowed\n• GREY - System app</string>
+    
+    <string name="help_section3_title">Wi-Fi vs Mobile Control</string>
+    <string name="help_section3_content">You can control internet access separately for Wi-Fi and mobile networks:\n\n• Tap the Wi-Fi icon to allow or block Wi-Fi access\n• Tap the mobile icon to allow or block mobile data access\n• Long-press an app for detailed options</string>
+    
+    <string name="help_section4_title">Blacklist vs Whitelist Mode</string>
+    <string name="help_section4_content">Choose how you want to control access:\n\n• BLACKLIST (Default): Allow all apps by default, block specific ones\n• WHITELIST: Block all apps by default, allow specific ones\n\nChange this in Settings and Advanced options</string>
+    
+    <string name="help_section5_title">Security Features</string>
+    <string name="help_section5_content">• No root required - Uses Android VPN service\n• Open source - Full transparency\n• No tracking - Your data stays private\n• Real-time monitoring - See exactly what is happening\n• Detailed logs - Track all network activity</string>
+    
+    <string name="help_section6_title">Tips and Tricks</string>
+    <string name="help_section6_content">• Use screen-on or off options to allow apps only when using your phone\n• Block roaming to prevent data charges abroad\n• Set specific rules per app in Advanced settings\n• Export logs for detailed analysis\n• Use the search function to quickly find apps</string>
+</resources>

@@ -457,7 +457,7 @@
                 android:textAppearance="@style/TextSmall"
                 android:textStyle="italic" />
 
-            <eu.faircode.netguard.ExpandedListView
+            <org.alhaq.deenshield.netblock.ExpandedListView
                 android:id="@+id/lvAccess"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

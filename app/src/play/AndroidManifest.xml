@@ -60,12 +60,12 @@
     </queries>
 
     <permission
-        android:name="eu.faircode.netguard.permission.ADMIN"
+        android:name="org.alhaq.deenshield.netblock.permission.ADMIN"
         android:description="@string/app_description"
         android:label="@string/app_name"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="eu.faircode.netguard.permission.ADMIN" />
+    <uses-permission android:name="org.alhaq.deenshield.netblock.permission.ADMIN" />
 
     <uses-feature
         android:name="android.hardware.wifi"
@@ -119,7 +119,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="www.netguard.me"
+                    android:host="www.netblock.me"
                     android:pathPrefix="/"
                     android:scheme="https" />
             </intent-filter-->
@@ -195,8 +195,8 @@
             android:label="@string/app_name"
             android:theme="@style/AppDialog">
             <intent-filter>
-                <action android:name="eu.faircode.netguard.START_PORT_FORWARD" />
-                <action android:name="eu.faircode.netguard.STOP_PORT_FORWARD" />
+                <action android:name="org.alhaq.deenshield.netblock.START_PORT_FORWARD" />
+                <action android:name="org.alhaq.deenshield.netblock.STOP_PORT_FORWARD" />
             </intent-filter>
         </activity>
 
@@ -208,7 +208,7 @@
             android:permission="android.permission.BIND_VPN_SERVICE">
             <property
                 android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
-                android:value="NetGuard is a firewall app using the Android VPN service to filter traffic on the device. A foreground service is required to process internet traffic in real-time to be able to allow and block traffic as configured by the user of the app. There is no other way to do this, and other foreground service types are either too limited or not appropriate."  />
+                android:value="DeenShield AppControl is a firewall app using the Android VPN service to filter traffic on the device. A foreground service is required to process internet traffic in real-time to be able to allow and block traffic as configured by the user of the app. There is no other way to do this, and other foreground service types are either too limited or not appropriate."  />
             <intent-filter>
                 <action android:name="android.net.VpnService" />
             </intent-filter>
@@ -221,9 +221,9 @@
             android:label="@string/app_name">
             <property
                 android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
-                android:value="NetGuard is a firewall app using the Android VPN service to filter traffic on the device. A foreground service is required to process internet traffic in real-time to be able to allow and block traffic as configured by the user of the app. There is no other way to do this, and other foreground service types are either too limited or not appropriate."  />
+                android:value="DeenShield AppControl is a firewall app using the Android VPN service to filter traffic on the device. A foreground service is required to process internet traffic in real-time to be able to allow and block traffic as configured by the user of the app. There is no other way to do this, and other foreground service types are either too limited or not appropriate."  />
             <intent-filter>
-                <action android:name="eu.faircode.netguard.DOWNLOAD_HOSTS_FILE" />
+                <action android:name="org.alhaq.deenshield.netblock.DOWNLOAD_HOSTS_FILE" />
             </intent-filter>
         </service>
 
@@ -318,12 +318,12 @@
             android:name=".WidgetAdmin"
             android:exported="true"
             android:label="@string/app_name"
-            android:permission="eu.faircode.netguard.permission.ADMIN">
+            android:permission="org.alhaq.deenshield.netblock.permission.ADMIN">
             <intent-filter>
-                <action android:name="eu.faircode.netguard.ON" />
-                <action android:name="eu.faircode.netguard.OFF" />
-                <action android:name="eu.faircode.netguard.LOCKDOWN_ON" />
-                <action android:name="eu.faircode.netguard.LOCKDOWN_OFF" />
+                <action android:name="org.alhaq.deenshield.netblock.ON" />
+                <action android:name="org.alhaq.deenshield.netblock.OFF" />
+                <action android:name="org.alhaq.deenshield.netblock.LOCKDOWN_ON" />
+                <action android:name="org.alhaq.deenshield.netblock.LOCKDOWN_OFF" />
             </intent-filter>
         </receiver>
     </application>
