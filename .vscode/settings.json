@@ -1,4 +1,6 @@
 {
     "java.configuration.updateBuildConfiguration": "interactive",
-    "cmake.sourceDirectory": "E:/HabiburRahman/Development/NetBlock/app"
+    "cmake.sourceDirectory": "${workspaceFolder}/app",
+    "java.import.gradle.java.home": "C:\\Program Files\\Android\\Android Studio\\jbr",
+    "gradle.java.home": "C:\\Program Files\\Android\\Android Studio\\jbr"
 }
