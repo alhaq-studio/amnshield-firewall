@@ -53,6 +53,9 @@ public class ApplicationEx extends Application {
         super.onCreate();
         Log.i(TAG, "Create version=" + Util.getSelfVersionName(this) + "/" + Util.getSelfVersionCode(this));
 
+        // Start rules synchronization with AmnShield on application launch
+        AmnShieldSyncService.startSync(this);
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
             createNotificationChannels();
 

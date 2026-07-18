@@ -18,12 +18,9 @@
 
     <!-- https://developer.android.com/preview/privacy/package-visibility -->
     <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
-    <!--queries>
-        <intent>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent>
-    </queries-->
+    <queries>
+        <package android:name="com.alhaq.amnshield" />
+    </queries>
 
     <permission
         android:name="org.alhaq.deenshield.netblock.permission.ADMIN"
@@ -311,6 +308,21 @@
                 <action android:name="org.alhaq.deenshield.netblock.OFF" />
                 <action android:name="org.alhaq.deenshield.netblock.LOCKDOWN_ON" />
                 <action android:name="org.alhaq.deenshield.netblock.LOCKDOWN_OFF" />
+            </intent-filter>
+        </receiver>
+
+        <!-- AmnShield Sync Service & Broadcast Receiver -->
+        <service
+            android:name="org.alhaq.deenshield.netblock.AmnShieldSyncService"
+            android:exported="false" />
+
+        <receiver
+            android:name="org.alhaq.deenshield.netblock.AmnShieldSyncReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="amnshield.refresh.appblocker" />
+                <action android:name="amnshield.refresh.focusmode" />
+                <action android:name="com.alhaq.amnshield.SYNC_RULES" />
             </intent-filter>
         </receiver>
     </application>
