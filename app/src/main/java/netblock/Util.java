@@ -500,7 +500,7 @@ public class Util {
     public static void setTheme(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         boolean dark = prefs.getBoolean("dark_theme", false);
-        String theme = prefs.getString("theme", "sunset");
+        String theme = prefs.getString("theme", "emerald");
         
         if (theme.equals("sunset")) {
             context.setTheme(dark ? R.style.AppThemeCosmic : R.style.AppThemeSunset);
@@ -523,7 +523,7 @@ public class Util {
             else if (theme.equals("green"))
                 context.setTheme(dark ? R.style.AppThemeGreenDark : R.style.AppThemeGreen);
             else
-                context.setTheme(dark ? R.style.AppThemeCosmic : R.style.AppThemeSunset);
+                context.setTheme(dark ? R.style.AppThemeCosmic : R.style.AppThemeEmerald);
         }
 
         if (context instanceof Activity && Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
