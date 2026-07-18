@@ -32,8 +32,8 @@ import java.net.InetAddress;
 
 public class ActivityForwardApproval extends Activity {
     private static final String TAG = "DeenShield AppControl.Forward";
-    private static final String ACTION_START_PORT_FORWARD = "org.alhaq.deenshield.netblock.START_PORT_FORWARD";
-    private static final String ACTION_STOP_PORT_FORWARD = "org.alhaq.deenshield.netblock.STOP_PORT_FORWARD";
+    private static final String ACTION_START_PORT_FORWARD = "org.alhaq.deenshield.AmnShield.START_PORT_FORWARD";
+    private static final String ACTION_STOP_PORT_FORWARD = "org.alhaq.deenshield.AmnShield.STOP_PORT_FORWARD";
 
     static {
         try {
@@ -88,8 +88,8 @@ public class ActivityForwardApproval extends Activity {
             public void onClick(View view) {
                 if (ACTION_START_PORT_FORWARD.equals(getIntent().getAction())) {
 /*
-am start -a org.alhaq.deenshield.netblock.START_PORT_FORWARD \
--n org.alhaq.deenshield.netblock/org.alhaq.deenshield.netblock.ActivityForwardApproval \
+am start -a org.alhaq.deenshield.AmnShield.START_PORT_FORWARD \
+-n org.alhaq.deenshield.netblock/org.alhaq.deenshield.AmnShield.ActivityForwardApproval \
 --ei protocol 17 \
 --ei dport 53 \
 --es raddr 8.8.4.4 \
@@ -104,8 +104,8 @@ am start -a org.alhaq.deenshield.netblock.START_PORT_FORWARD \
 
                 } else if (ACTION_STOP_PORT_FORWARD.equals(getIntent().getAction())) {
 /*
-am start -a org.alhaq.deenshield.netblock.STOP_PORT_FORWARD \
--n org.alhaq.deenshield.netblock/org.alhaq.deenshield.netblock.ActivityForwardApproval \
+am start -a org.alhaq.deenshield.AmnShield.STOP_PORT_FORWARD \
+-n org.alhaq.deenshield.netblock/org.alhaq.deenshield.AmnShield.ActivityForwardApproval \
 --ei protocol 17 \
 --ei dport 53 \
 --user 0

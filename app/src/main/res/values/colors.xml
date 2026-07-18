@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- DeenShield Primary Colors - Modern Islamic Blue/Green -->
+    <!-- AmnShield Primary Colors - Modern Islamic Blue/Green -->
     <color name="colorTealPrimary">#1B6B5E</color>
     <color name="colorTealPrimaryDark">#0F4C42</color>
     <color name="colorTealAccent">#26D07C</color>

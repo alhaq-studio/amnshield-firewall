@@ -3,7 +3,7 @@ Play store
 
 Title
 -----
-DeenShield AppControl - कोई रूट फ़ायरवॉल
+AmnShield FireWall - कोई रूट फ़ायरवॉल
 
 
 Short description
@@ -13,7 +13,7 @@ Short description
 
 Long description
 ----------------
-कोई जड़ आवश्यक - DeenShield AppControl इंटरनेट के लिए उपयोग ब्लॉक करने के लिए सरल और उन्नत तरीके सुझाता है।
+कोई जड़ आवश्यक - AmnShield FireWall इंटरनेट के लिए उपयोग ब्लॉक करने के लिए सरल और उन्नत तरीके सुझाता है।
 
 आवेदन और पतों को व्यक्तिगत रूप से अनुमति या अपने वाई-फाई और / या मोबाइल कनेक्शन के लिए उपयोग से इनकार किया जा सकता है।
 
@@ -47,17 +47,17 @@ Long description
 &bull; सभी निवर्तमान यातायात लॉग; खोज और उपयोग प्रयास को फिल्टर; यातायात का विश्लेषण करने के लिए निर्यात PCAP फ़ाइलों
 &bull; अनुमति दें / ब्लॉक आवेदन के अनुसार अलग-अलग पतों
 &bull; नई आवेदन सूचनाएं; एक स्थिति पट्टी अधिसूचना में अधिसूचना
-&bull; प्रदर्शन नेटवर्क की गति ग्राफ से सीधे DeenShield AppControl कॉन्फ़िगर
+&bull; प्रदर्शन नेटवर्क की गति ग्राफ से सीधे AmnShield FireWall कॉन्फ़िगर
 &bull; दोनों प्रकाश और अंधेरे संस्करण में पांच अतिरिक्त विषयों में से चयन करें
 
 वहाँ कोई अन्य कोई रूट इन सभी सुविधाओं की पेशकश फ़ायरवॉल है।
 
-आप एक प्रश्न या समस्या है, तो आप marcel+netblock@faircode.eu~~V को एक ई-मेल भेज सकते हैं
+आप एक प्रश्न या समस्या है, तो आप marcel+AmnShield FireWall@faircode.eu~~V को एक ई-मेल भेज सकते हैं
 
-आप लोगों को अंग्रेजी में धाराप्रवाह कम में मदद करना चाहते हैं, तो आप मदद कर सकते हैं अपनी भाषा में अनुवाद कर DeenShield AppControl: https://crowdin.com/project/netblock/
+आप लोगों को अंग्रेजी में धाराप्रवाह कम में मदद करना चाहते हैं, तो आप मदद कर सकते हैं अपनी भाषा में अनुवाद कर AmnShield FireWall: https://crowdin.com/project/netblock/
 
-आप नई सुविधाओं का परीक्षण करना चाहते हैं, तो आप परीक्षण कार्यक्रम में भाग ले सकते हैं: https://play.google.com/apps/testing/org.alhaq.deenshield.netblock
+आप नई सुविधाओं का परीक्षण करना चाहते हैं, तो आप परीक्षण कार्यक्रम में भाग ले सकते हैं: https://play.google.com/apps/testing/org.alhaq.AmnShield.netblock
 
-सभी आवश्यक अनुमतियों यहाँ वर्णित हैं: https://github.com/M66B/DeenShield AppControl/blob/master/FAQ.md#FAQ42
+सभी आवश्यक अनुमतियों यहाँ वर्णित हैं: https://github.com/M66B/AmnShield FireWall/blob/master/FAQ.md#FAQ42
 
-स्रोत कोड यहाँ उपलब्ध है: https://github.com/M66B/DeenShield AppControl
+स्रोत कोड यहाँ उपलब्ध है: https://github.com/M66B/AmnShield FireWall

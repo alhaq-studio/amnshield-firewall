@@ -145,7 +145,7 @@ public class ActivityPro extends AppCompatActivity {
                 }
 
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("http://www.netblock.me/#" + sku));
+                intent.setData(Uri.parse("http://www.AmnShield.me/#" + sku));
                 if (intent.resolveActivity(getPackageManager()) != null)
                     startActivity(intent);
             }

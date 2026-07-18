@@ -36,11 +36,11 @@ import java.util.Date;
 public class WidgetAdmin extends ReceiverAutostart {
     private static final String TAG = "DeenShield AppControl.Widget";
 
-    public static final String INTENT_ON = "org.alhaq.deenshield.netblock.ON";
-    public static final String INTENT_OFF = "org.alhaq.deenshield.netblock.OFF";
+    public static final String INTENT_ON = "org.alhaq.deenshield.AmnShield.ON";
+    public static final String INTENT_OFF = "org.alhaq.deenshield.AmnShield.OFF";
 
-    public static final String INTENT_LOCKDOWN_ON = "org.alhaq.deenshield.netblock.LOCKDOWN_ON";
-    public static final String INTENT_LOCKDOWN_OFF = "org.alhaq.deenshield.netblock.LOCKDOWN_OFF";
+    public static final String INTENT_LOCKDOWN_ON = "org.alhaq.deenshield.AmnShield.LOCKDOWN_ON";
+    public static final String INTENT_LOCKDOWN_OFF = "org.alhaq.deenshield.AmnShield.LOCKDOWN_OFF";
 
     @Override
     public void onReceive(Context context, Intent intent) {

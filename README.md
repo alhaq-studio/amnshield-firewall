@@ -1,6 +1,6 @@
-# DeenShield NetBlock
+# AmnShield AmnShield FireWall
 
-*DeenShield NetBlock* provides simple and advanced ways to block access to the internet - no root required.
+*AmnShield AmnShield FireWall* provides simple and advanced ways to block access to the internet - no root required.
 Applications and addresses can individually be allowed or denied access to your Wi-Fi and/or mobile connection.
 
 
@@ -11,7 +11,7 @@ Blocking access to the internet can help:
 * save your battery
 * increase your privacy
 
-DeenShield AppControl is the first free and open source no-root firewall for Android.
+AmnShield FireWall is the first free and open source no-root firewall for Android.
 
 Features:
 
@@ -36,7 +36,7 @@ PRO features:
 
 * Log all outgoing traffic; search and filter access attempts; export PCAP files to analyze traffic
 * Allow/block individual addresses per application
-* New application notifications; configure DeenShield AppControl directly from the notification
+* New application notifications; configure AmnShield FireWall directly from the notification
 * Display network speed graph in a status bar notification
 * Select from five additional themes in both light and dark version
 

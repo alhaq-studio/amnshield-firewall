@@ -1,28 +1,28 @@
-# DeenShield NetBlock - AI Coding Agent Instructions
+# AmnShield AmnShield FireWall - AI Coding Agent Instructions
 
 ## Project Overview
-**DeenShield NetBlock** is part of the **DeenShield Ecosystem** - a comprehensive protection suite for parental control, individual protection, and organizational-level content management, focused on serving the Muslim community and wider world.
+**AmnShield AmnShield FireWall** is part of the **AmnShield Ecosystem** - a comprehensive protection suite for parental control, individual protection, and organizational-level content management, focused on serving the Muslim community and wider world.
 
 ### Current Ecosystem Status (January 24, 2026)
-- **DeenShield App:** v1.1.0 published, Guardian integration Phase 6-8 planned
+- **AmnShield App:** v1.1.0 published, Guardian integration Phase 6-8 planned
 - **Guardian:** Phase 1 auth 60% complete, integration design complete
-- **NetBlock:** Planned for Phase 9-10 integration (February 2026)
+- **AmnShield FireWall:** Planned for Phase 9-10 integration (February 2026)
 - **Integration Model:** Optional federation with permission-based linking
 
-### DeenShield Ecosystem Architecture
-- **DeenShield Guardian** (Kotlin/Compose) - Central **protection hub and manager** for parental control, individual protection, and organizational-level content blocking. Provides centralized configuration and management interface. **Status:** Phase 1 development
-- **DeenShield NetBlock** (This Project) - **Individual app-level internet/WiFi controller and access blocker**. No-root Android firewall for per-app/per-address network access control. **Standalone app** that can optionally pair with Guardian for centralized management. **Status:** Ready for Phase 9-10 integration
-- **DeenShield App** (Main On-Device Protection) - Primary online protection, content filtering, blurring, and productivity features. Handles real-time content-level filtering and immoral content protection. **Standalone app** that can optionally pair with Guardian. **Status:** v1.1.0 published, Phase 6-8 integration ready
+### AmnShield Ecosystem Architecture
+- **AmnShield Guardian** (Kotlin/Compose) - Central **protection hub and manager** for parental control, individual protection, and organizational-level content blocking. Provides centralized configuration and management interface. **Status:** Phase 1 development
+- **AmnShield AmnShield FireWall** (This Project) - **Individual app-level internet/WiFi controller and access blocker**. No-root Android firewall for per-app/per-address network access control. **Standalone app** that can optionally pair with Guardian for centralized management. **Status:** Ready for Phase 9-10 integration
+- **AmnShield App** (Main On-Device Protection) - Primary online protection, content filtering, blurring, and productivity features. Handles real-time content-level filtering and immoral content protection. **Standalone app** that can optionally pair with Guardian. **Status:** v1.1.0 published, Phase 6-8 integration ready
 
 ### Integration Architecture
-- **Standalone Mode:** Each app (DeenShield, NetBlock) functions independently with full features
+- **Standalone Mode:** Each app (AmnShield, AmnShield FireWall) functions independently with full features
 - **Guardian-Paired Mode:** Apps can optionally connect to Guardian for centralized management, parental control, and organizational policies
 - **User Choice:** Integration is optional and user-driven. Guardian is **recommended but not forced** - users decide their protection level
 
 ### Ecosystem Consistency Goals
-The DeenShield Ecosystem must be:
+The AmnShield Ecosystem must be:
 - **Fully Consistent** - Unified UX, branding, and interaction patterns across all apps
-- **Fully Functional** - Every feature works reliably across Guardian, NetBlock, and DeenShield App
+- **Fully Functional** - Every feature works reliably across Guardian, AmnShield FireWall, and AmnShield App
 - **Accessible to All** - Premium protection available regardless of financial situation
 
 ### Compassionate Access Program ("I Can't Afford to Pay")
@@ -43,15 +43,15 @@ The DeenShield Ecosystem must be:
    - **App ID:** Auto-generated (for verification)
 
 4. **Proceed Button:** After pressing "Proceed":
-   - Grant **1-year free access** to ALL DeenShield platforms (Guardian, App, NetBlock premium features)
+   - Grant **1-year free access** to ALL AmnShield platforms (Guardian, App, AmnShield FireWall premium features)
    - Show confirmation with access details
    - No payment required, no verification, trust-based
 
 5. **Additional Support Information:**
    Display after granting access:
    > *"If you need further assistance or have questions:"*
-   > - Visit: **alhaq-initiative.org/deenshield/premium** for more information
-   > - Visit: **alhaq-initiative.org/deenshield/pay** if your situation changes and you wish to contribute
+   > - Visit: **alhaq-initiative.org/AmnShield/premium** for more information
+   > - Visit: **alhaq-initiative.org/AmnShield/pay** if your situation changes and you wish to contribute
    > - Email: **support@alhaq-initiative.org** with your App ID, email, and name for direct support
 
 #### Implementation Requirements
@@ -61,14 +61,14 @@ The DeenShield Ecosystem must be:
 - **Renewal:** After 1 year, user can re-apply if still in need
 - **Tracking:** Store compassionate access grants locally + optional anonymized count for reporting
 
-### NetBlock Component Variants
+### AmnShield FireWall Component Variants
 Two active implementations in this workspace:
-- **NetBlock** (Java-based, mature) - Legacy but feature-complete firewall with advanced routing, AIDL communication
-- **DeenShield Guardian** (Kotlin/Compose-based, modern) - Contemporary rebuild with VPN-based blocking, serves as both central hub AND enhanced NetBlock replacement
+- **AmnShield FireWall** (Java-based, mature) - Legacy but feature-complete firewall with advanced routing, AIDL communication
+- **AmnShield Guardian** (Kotlin/Compose-based, modern) - Contemporary rebuild with VPN-based blocking, serves as both central hub AND enhanced AmnShield FireWall replacement
 
 ## Architecture & Key Components
 
-### NetBlock (Java - Legacy)
+### AmnShield FireWall (Java - Legacy)
 **Core Engine:**
 - `ServiceSinkhole` - Network packet interception via VPN service; routes ALL traffic through `0.0.0.0/0`
 - `Rule` - Blocking rule storage (SQL-backed); contains app/domain/IP filtering logic
@@ -80,7 +80,7 @@ Two active implementations in this workspace:
 - Widget-based quick toggles (`WidgetMain`, `WidgetAdmin`, `WidgetLockdown`)
 - Quick-settings tiles (`ServiceTile*` classes)
 
-### DeenShield Guardian (Kotlin/Compose - Modern)
+### AmnShield Guardian (Kotlin/Compose - Modern)
 **Architecture:** MVVM with Hilt DI, Compose UI, Room database
 - **BlockViewModel** - Central state management; sends configuration to services via Intent
 - **BlockingVpnService** - Hilt-injected VPN service; packet inspection with `ContentFilter` & `PacketParser`
@@ -98,11 +98,11 @@ User Input (Compose UI) → BlockViewModel
 
 ### Build & Test
 ```powershell
-# NetBlock (Java)
+# AmnShield FireWall (Java)
 cd e:\HabiburRahman\Development\NetBlock
 .\gradlew.bat assembleDebug --console=plain
 
-# DeenShield Guardian (Kotlin)
+# AmnShield Guardian (Kotlin)
 cd e:\HabiburRahman\Development\DeenSheild-Guardian
 .\gradlew.bat :app:assembleDebug --no-daemon --stacktrace
 
@@ -110,12 +110,12 @@ cd e:\HabiburRahman\Development\DeenSheild-Guardian
 adb install app\build\outputs\apk\debug\app-debug.apk
 ```
 
-**Debugging:** Both use Android Studio debugger. NetBlock is older (Java 1.8 target), Guardian uses Java 17 (Kotlin 2.0).
+**Debugging:** Both use Android Studio debugger. AmnShield FireWall is older (Java 1.8 target), Guardian uses Java 17 (Kotlin 2.0).
 
 ### Key Integration Points
 1. **VPN Service Configuration** - Guardian only: VPN service listens for `ACTION_UPDATE_CONFIG` Intents with domain/keyword lists
 2. **Accessibility Service** - Guardian: Must be explicitly enabled in device Settings; cooldown (2s) prevents block notification spam
-3. **Native Libraries** - NetBlock uses JNI for packet parsing (CMakeLists.txt, NativeCode.cpp); Guardian uses pure Kotlin/Java
+3. **Native Libraries** - AmnShield FireWall uses JNI for packet parsing (CMakeLists.txt, NativeCode.cpp); Guardian uses pure Kotlin/Java
 
 ## Project-Specific Patterns
 
@@ -127,11 +127,11 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 ### Blocking Enforcement
 - **VPN-level (Deep Packet Inspection):** Guardian intercepts all IP packets; checks DNS responses, HTTP headers
 - **App-level (Accessibility):** When forbidden app launched, AccessibilityService redirects to Home with Toast + 2s cooldown
-- **Scheduling:** Both support time-based rules; NetBlock integrates `ScheduleManager`, Guardian has `schedule` field in Block model
+- **Scheduling:** Both support time-based rules; AmnShield FireWall integrates `ScheduleManager`, Guardian has `schedule` field in Block model
 
 ### Error Handling & Resource Cleanup
 - **Guardian VPN:** Implements proper `onDestroy()` cleanup (closes FileDescriptors, cancels coroutines, stops foreground notification)
-- **NetBlock:** Uses traditional Android lifecycle; critical fix: prevent VPN loops via `addDisallowedApplication()`
+- **AmnShield FireWall:** Uses traditional Android lifecycle; critical fix: prevent VPN loops via `addDisallowedApplication()`
 
 ## Important Known Issues & Fixes
 
@@ -150,10 +150,10 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 6. Check status cards: both should show GREEN when active
 
 ## File Structure & Key Paths
-- **Guardian Core:** `app/src/main/java/com/deenshield/blocker/{service,viewmodel,ui,data}/`
+- **Guardian Core:** `app/src/main/java/com/AmnShield/blocker/{service,viewmodel,ui,data}/`
 - **Guardian Config:** App-level dependencies in `app/build.gradle.kts` (Hilt, Room, Compose)
-- **NetBlock Legacy:** `app/src/main/java/netblock/` (Java packages); native code in `app/jni/`
-- **Shared:** Both use same application ID `org.alhaq.deenshield.*`; separate build types (debug/release/play)
+- **AmnShield FireWall Legacy:** `app/src/main/java/netblock/` (Java packages); native code in `app/jni/`
+- **Shared:** Both use same application ID `org.alhaq.AmnShield.*`; separate build types (debug/release/play)
 
 ## Critical Safety Guidelines
 

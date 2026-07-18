@@ -1,4 +1,4 @@
-# DeenShield Testing Guide
+# AmnShield Testing Guide
 
 ## Quick Start Testing
 
@@ -14,7 +14,7 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 ### Step 2: Initial Setup
 
 1. **Launch the App**
-   - Open DeenShield from your app drawer
+   - Open AmnShield from your app drawer
    - You should see the Blocks screen (empty initially)
 
 2. **Navigate to Settings**
@@ -43,7 +43,7 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 
 ### Verify Blocking
 - VPN status should remain GREEN
-- You should see a notification "DeenShield Protection Active"
+- You should see a notification "AmnShield Protection Active"
 - Notification shows packet statistics when you pull down notification shade
 
 ---
@@ -54,9 +54,9 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 1. In Settings, look for "App Blocking" card
 2. Should show "Inactive" in RED
 3. Tap "Open Accessibility Settings"
-4. Find "DeenShield Blocker" or "Accessibility Blocker"
+4. Find "AmnShield Blocker" or "Accessibility Blocker"
 5. Enable the service
-6. Return to DeenShield app
+6. Return to AmnShield app
 7. Card should now show GREEN "Active - Blocking apps"
 
 ### Block an App
@@ -68,12 +68,12 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 6. Dialog closes, apps are now in blocked list
 
 ### Test App Blocking
-1. Exit DeenShield app (press home)
+1. Exit AmnShield app (press home)
 2. Try to open Instagram (or any blocked app)
 3. **Expected:** 
    - App starts to open
    - Immediately redirects to home screen
-   - Toast message: "App blocked by DeenShield"
+   - Toast message: "App blocked by AmnShield"
 4. Try again - same result with 2-second cooldown
 
 ---
@@ -120,7 +120,7 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 
 4. **Test Accessibility:**
    - Go to Android Settings → Accessibility
-   - Disable DeenShield Blocker
+   - Disable AmnShield Blocker
    - Return to app
    - Card turns RED
    - Re-enable service
@@ -166,7 +166,7 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 **Symptoms:** Blocked apps still open
 **Fix:**
 1. Verify Accessibility Service is enabled:
-   - Settings → Accessibility → DeenShield Blocker → ON
+   - Settings → Accessibility → AmnShield Blocker → ON
 2. Check if app is in blocked list:
    - Settings → Blocked Apps section
 3. Try blocking again from "Manage blocked apps"
@@ -223,8 +223,8 @@ adb logcat | Select-String "BlockingVpnService"
 # Monitor Accessibility service logs
 adb logcat | Select-String "AccessibilityBlocker"
 
-# Monitor all DeenShield logs
-adb logcat | Select-String "deenshield"
+# Monitor all AmnShield logs
+adb logcat | Select-String "AmnShield"
 ```
 
 ### Test Network Traffic

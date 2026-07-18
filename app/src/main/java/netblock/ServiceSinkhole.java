@@ -200,9 +200,9 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
 
     private ExecutorService executor = Executors.newCachedThreadPool();
 
-    private static final String ACTION_HOUSE_HOLDING = "org.alhaq.deenshield.netblock.HOUSE_HOLDING";
-    private static final String ACTION_SCREEN_OFF_DELAYED = "org.alhaq.deenshield.netblock.SCREEN_OFF_DELAYED";
-    private static final String ACTION_WATCHDOG = "org.alhaq.deenshield.netblock.WATCHDOG";
+    private static final String ACTION_HOUSE_HOLDING = "org.alhaq.deenshield.AmnShield.HOUSE_HOLDING";
+    private static final String ACTION_SCREEN_OFF_DELAYED = "org.alhaq.deenshield.AmnShield.SCREEN_OFF_DELAYED";
+    private static final String ACTION_WATCHDOG = "org.alhaq.deenshield.AmnShield.WATCHDOG";
 
     private native long jni_init(int sdk);
 
@@ -247,7 +247,7 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
             Log.e(TAG, ex.toString() + "\n" + Log.getStackTraceString(ex));
         }
 
-        File pcap = (enabled ? new File(context.getDir("data", MODE_PRIVATE), "netblock.pcap") : null);
+        File pcap = (enabled ? new File(context.getDir("data", MODE_PRIVATE), "AmnShield.pcap") : null);
         jni_pcap(pcap == null ? null : pcap.getAbsolutePath(), record_size, file_size);
     }
 
@@ -1672,7 +1672,7 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
                         Log.i(TAG, "Invalid hosts file line: " + line);
                 }
             }
-            mapHostsBlocked.put("test.netblock.me", true);
+            mapHostsBlocked.put("test.AmnShield.me", true);
             Log.i(TAG, count + " hosts read");
         } catch (IOException ex) {
             Log.e(TAG, ex.toString() + "\n" + Log.getStackTraceString(ex));

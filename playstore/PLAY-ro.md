@@ -3,7 +3,7 @@ Play store
 
 Title
 -----
-DeenShield AppControl - firewall fara root
+AmnShield FireWall - firewall fara root
 
 
 Short description
@@ -13,7 +13,7 @@ Un mod simplu de a bloca accesul aplicatiilor la internet
 
 Long description
 ----------------
-DeenShield AppControl ofera modalitati simple si avansate de a bloca accesul la internet, ce nu necesita acces root.
+AmnShield FireWall ofera modalitati simple si avansate de a bloca accesul la internet, ce nu necesita acces root.
 
 Accesul aplicatiilor la conexiunile Wi-Fi si/sau mobile poate fi permis sau blocat atat la nivel individual cat si la nivel de adresa.
 
@@ -46,18 +46,18 @@ Caracteristici PRO:
 
 &bull; Jurnal de trafic; cauta si filtreaza lista de accesari; exporta fisiere PCAP pentru analiza traficului
 &bull; Permite/blocheaza accesul per aplicatie si per domeniu
-&bull; Notificare aplicatie noua instalata; configureaza DeenShield AppControl direct din notificare
+&bull; Notificare aplicatie noua instalata; configureaza AmnShield FireWall direct din notificare
 &bull; Grafic viteza conexiune intr-o notificare
 &bull; Alege din cele 5 teme aditionale atat in versiune deschisa cat si inchisa
 
 Nu există nici un alt firewall, ce nu necesita root, care sa ofere toate aceste caracteristici.
 
-Pentru intrebari sau probleme puteti trimite un email la marcel+netblock@faircode.eu
+Pentru intrebari sau probleme puteti trimite un email la marcel+AmnShield FireWall@faircode.eu
 
-Daca vrei sa ii ajuti pe cei ce nu vorbesc limba engleza, poti ajuta la traducerea DeenShield AppControl in limba ta materna: https://crowdin.com/project/netblock/
+Daca vrei sa ii ajuti pe cei ce nu vorbesc limba engleza, poti ajuta la traducerea AmnShield FireWall in limba ta materna: https://crowdin.com/project/netblock/
 
-Daca doriti sa testati caracteristile in dezvoltare ale aplicatiei, va puteti alatura programului de testare: https://play.google.com/apps/testing/org.alhaq.deenshield.netblock
+Daca doriti sa testati caracteristile in dezvoltare ale aplicatiei, va puteti alatura programului de testare: https://play.google.com/apps/testing/org.alhaq.AmnShield.netblock
 
-Toate permisiunile necesare sunt detaliate aici: https://github.com/M66B/DeenShield AppControl/blob/master/FAQ.md#FAQ42
+Toate permisiunile necesare sunt detaliate aici: https://github.com/M66B/AmnShield FireWall/blob/master/FAQ.md#FAQ42
 
-Codul sursa este disponibil aici: https://github.com/M66B/DeenShield AppControl
+Codul sursa este disponibil aici: https://github.com/M66B/AmnShield FireWall

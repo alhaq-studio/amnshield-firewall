@@ -374,7 +374,7 @@ public class ActivitySettings extends AppCompatActivity implements SharedPrefere
 
                     EditTextPreference pref_hosts_url = (EditTextPreference) screen.findPreference("hosts_url");
                     String hosts_url = pref_hosts_url.getText();
-                    if ("https://www.netblock.me/hosts".equals(hosts_url))
+                    if ("https://www.AmnShield.me/hosts".equals(hosts_url))
                         hosts_url = BuildConfig.HOSTS_FILE_URI;
 
                     try {
@@ -753,7 +753,7 @@ public class ActivitySettings extends AppCompatActivity implements SharedPrefere
 
             ServiceSinkhole.setPcap(false, this);
 
-            File pcap_file = new File(getDir("data", MODE_PRIVATE), "netblock.pcap");
+            File pcap_file = new File(getDir("data", MODE_PRIVATE), "AmnShield.pcap");
             if (pcap_file.exists() && !pcap_file.delete())
                 Log.w(TAG, "Delete PCAP failed");
 

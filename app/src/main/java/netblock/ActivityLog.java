@@ -381,7 +381,7 @@ public class ActivityLog extends AppCompatActivity implements SharedPreferences.
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
         // https://gist.github.com/granoeste/5574148
-        File pcap_file = new File(getDir("data", MODE_PRIVATE), "netblock.pcap");
+        File pcap_file = new File(getDir("data", MODE_PRIVATE), "AmnShield.pcap");
 
         boolean export = (getPackageManager().resolveActivity(getIntentPCAPDocument(), 0) != null);
 
@@ -404,7 +404,7 @@ public class ActivityLog extends AppCompatActivity implements SharedPreferences.
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        final File pcap_file = new File(getDir("data", MODE_PRIVATE), "netblock.pcap");
+        final File pcap_file = new File(getDir("data", MODE_PRIVATE), "AmnShield.pcap");
 
         switch (item.getItemId()) {
             case android.R.id.home:
@@ -597,11 +597,11 @@ public class ActivityLog extends AppCompatActivity implements SharedPreferences.
 
                     Uri target = data.getData();
                     if (data.hasExtra("org.openintents.extra.DIR_PATH"))
-                        target = Uri.parse(target + "/netblock.pcap");
+                        target = Uri.parse(target + "/AmnShield.pcap");
                     Log.i(TAG, "Export PCAP URI=" + target);
                     out = getContentResolver().openOutputStream(target);
 
-                    File pcap = new File(getDir("data", MODE_PRIVATE), "netblock.pcap");
+                    File pcap = new File(getDir("data", MODE_PRIVATE), "AmnShield.pcap");
                     in = new FileInputStream(pcap);
 
                     int len;

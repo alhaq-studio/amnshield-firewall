@@ -104,8 +104,8 @@ public class ActivityMain extends AppCompatActivity implements SharedPreferences
 
     private static final int MIN_SDK = Build.VERSION_CODES.LOLLIPOP_MR1;
 
-    public static final String ACTION_RULES_CHANGED = "org.alhaq.deenshield.netblock.ACTION_RULES_CHANGED";
-    public static final String ACTION_QUEUE_CHANGED = "org.alhaq.deenshield.netblock.ACTION_QUEUE_CHANGED";
+    public static final String ACTION_RULES_CHANGED = "org.alhaq.deenshield.AmnShield.ACTION_RULES_CHANGED";
+    public static final String ACTION_QUEUE_CHANGED = "org.alhaq.deenshield.AmnShield.ACTION_QUEUE_CHANGED";
     public static final String EXTRA_REFRESH = "Refresh";
     public static final String EXTRA_SEARCH = "Search";
     public static final String EXTRA_RELATED = "Related";
@@ -1332,7 +1332,7 @@ public class ActivityMain extends AppCompatActivity implements SharedPreferences
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_SUBJECT, context.getString(R.string.app_name));
-        intent.putExtra(Intent.EXTRA_TEXT, context.getString(R.string.msg_try) + "\n\nhttps://www.netblock.me/\n\n");
+        intent.putExtra(Intent.EXTRA_TEXT, context.getString(R.string.msg_try) + "\n\nhttps://www.AmnShield.me/\n\n");
         return intent;
     }
 

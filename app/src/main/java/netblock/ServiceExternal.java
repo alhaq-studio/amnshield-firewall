@@ -42,9 +42,9 @@ import java.util.Date;
 
 public class ServiceExternal extends IntentService {
     private static final String TAG = "DeenShield AppControl.External";
-    private static final String ACTION_DOWNLOAD_HOSTS_FILE = "org.alhaq.deenshield.netblock.DOWNLOAD_HOSTS_FILE";
+    private static final String ACTION_DOWNLOAD_HOSTS_FILE = "org.alhaq.deenshield.AmnShield.DOWNLOAD_HOSTS_FILE";
 
-    // am startservice -a org.alhaq.deenshield.netblock.DOWNLOAD_HOSTS_FILE
+    // am startservice -a org.alhaq.deenshield.AmnShield.DOWNLOAD_HOSTS_FILE
 
     public ServiceExternal() {
         super(TAG);
@@ -62,7 +62,7 @@ public class ServiceExternal extends IntentService {
                 final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
                 String hosts_url = prefs.getString("hosts_url", null);
-                if ("https://www.netblock.me/hosts".equals(hosts_url))
+                if ("https://www.AmnShield.me/hosts".equals(hosts_url))
                     hosts_url = BuildConfig.HOSTS_FILE_URI;
 
                 File tmp = new File(getFilesDir(), "hosts.tmp");

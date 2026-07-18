@@ -750,9 +750,9 @@ public class Util {
                 06-14 13:02:41.332 19703 19703 W ircode.netguar: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
                 06-14 13:02:41.495 19703 19703 I TetheringManager: registerTetheringEventCallback:org.alhaq.deenshield.netblock
                 06-14 13:02:41.518 19703 19703 E AndroidRuntime: Process: org.alhaq.deenshield.netblock, PID: 19703
-                06-14 13:02:41.518 19703 19703 E AndroidRuntime:        at org.alhaq.deenshield.netblock.Util.getGeneralInfo(SourceFile:744)
-                06-14 13:02:41.518 19703 19703 E AndroidRuntime:        at org.alhaq.deenshield.netblock.ActivitySettings.updateTechnicalInfo(SourceFile:858)
-                06-14 13:02:41.518 19703 19703 E AndroidRuntime:        at org.alhaq.deenshield.netblock.ActivitySettings.onPostCreate(SourceFile:425)
+                06-14 13:02:41.518 19703 19703 E AndroidRuntime:        at org.alhaq.deenshield.AmnShield.Util.getGeneralInfo(SourceFile:744)
+                06-14 13:02:41.518 19703 19703 E AndroidRuntime:        at org.alhaq.deenshield.AmnShield.ActivitySettings.updateTechnicalInfo(SourceFile:858)
+                06-14 13:02:41.518 19703 19703 E AndroidRuntime:        at org.alhaq.deenshield.AmnShield.ActivitySettings.onPostCreate(SourceFile:425)
                 06-14 13:02:41.520 19703 19703 W DeenShield AppControl.App: java.lang.SecurityException: getDataNetworkTypeForSubscriber
                 06-14 13:02:41.520 19703 19703 W DeenShield AppControl.App: java.lang.SecurityException: getDataNetworkTypeForSubscriber
                 06-14 13:02:41.520 19703 19703 W DeenShield AppControl.App:  at android.os.Parcel.createExceptionOrNull(Parcel.java:2373)
