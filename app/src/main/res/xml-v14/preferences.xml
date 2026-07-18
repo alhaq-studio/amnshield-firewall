@@ -42,7 +42,7 @@
             android:key="category_options"
             android:title="@string/setting_options">
             <ListPreference
-                android:defaultValue="teal"
+                android:defaultValue="sunset"
                 android:entries="@array/themeNames"
                 android:entryValues="@array/themeValues"
                 android:key="theme" />

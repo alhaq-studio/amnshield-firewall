@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- AmnShield Canonical Brand Theme Colors -->
+    <!-- 1. Sunset Glow (Warm Sand & Terracotta) -->
+    <color name="colorSunsetPrimary">#A45833</color>
+    <color name="colorSunsetPrimaryDark">#8B4522</color>
+    <color name="colorSunsetAccent">#E6C2AF</color>
+    <color name="colorSunsetBg">#EEDBD0</color>
+
+    <!-- 2. Emerald Calm (Pearl Teal & Sage) -->
+    <color name="colorEmeraldPrimary">#3C7A67</color>
+    <color name="colorEmeraldPrimaryDark">#2A5C4D</color>
+    <color name="colorEmeraldAccent">#D9E8E0</color>
+    <color name="colorEmeraldBg">#F3F1EC</color>
+
+    <!-- 3. Cosmic Night (Deep Violet Tech) -->
+    <color name="colorCosmicPrimary">#C8B8FF</color>
+    <color name="colorCosmicPrimaryDark">#1F153E</color>
+    <color name="colorCosmicAccent">#3A2570</color>
+    <color name="colorCosmicBg">#140D26</color>
+    <color name="colorCosmicSurface">#241840</color>
+
     <!-- AmnShield Primary Colors - Modern Islamic Blue/Green -->
     <color name="colorTealPrimary">#1B6B5E</color>
     <color name="colorTealPrimaryDark">#0F4C42</color>

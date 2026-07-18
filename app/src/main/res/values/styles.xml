@@ -139,4 +139,35 @@
         <item name="colorOn">@color/colorGreenOn</item>
         <item name="colorOff">@color/colorGreenOff</item>
     </style>
+
+    <!-- AmnShield Brand Theme Styles -->
+    <!-- 1. Sunset Glow (Warm Sand & Terracotta - Light Theme) -->
+    <style name="AppThemeSunset" parent="BaseThemeDark">
+        <item name="colorPrimary">@color/colorSunsetPrimary</item>
+        <item name="colorPrimaryDark">@color/colorSunsetPrimaryDark</item>
+        <item name="colorAccent">@color/colorSunsetAccent</item>
+        <item name="colorOn">@color/colorSunsetPrimary</item>
+        <item name="colorOff">@color/colorTealOff</item>
+        <item name="android:windowBackground">@color/colorSunsetBg</item>
+    </style>
+
+    <!-- 2. Emerald Calm (Pearl Teal & Sage - Light Theme) -->
+    <style name="AppThemeEmerald" parent="BaseThemeDark">
+        <item name="colorPrimary">@color/colorEmeraldPrimary</item>
+        <item name="colorPrimaryDark">@color/colorEmeraldPrimaryDark</item>
+        <item name="colorAccent">@color/colorEmeraldAccent</item>
+        <item name="colorOn">@color/colorEmeraldPrimary</item>
+        <item name="colorOff">@color/colorTealOff</item>
+        <item name="android:windowBackground">@color/colorEmeraldBg</item>
+    </style>
+
+    <!-- 3. Cosmic Night (Deep Violet Tech - Dark Theme) -->
+    <style name="AppThemeCosmic" parent="BaseThemeLight">
+        <item name="colorPrimary">@color/colorCosmicAccent</item>
+        <item name="colorPrimaryDark">@color/colorCosmicPrimaryDark</item>
+        <item name="colorAccent">@color/colorCosmicPrimary</item>
+        <item name="colorOn">@color/colorCosmicPrimary</item>
+        <item name="colorOff">@color/colorTealOff</item>
+        <item name="android:windowBackground">@color/colorCosmicBg</item>
+    </style>
 </resources>

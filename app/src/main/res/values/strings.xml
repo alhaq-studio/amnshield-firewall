@@ -332,6 +332,9 @@ Your internet traffic is not being sent to a remote VPN server.</string>
     <string name="title_pro_already">The pro features are already activated</string>
 
     <string-array name="themeNames">
+        <item>Sunset Glow (Terracotta)</item>
+        <item>Emerald Calm (Sage)</item>
+        <item>Cosmic Night (Violet)</item>
         <item>teal/orange</item>
         <item>blue/orange</item>
         <item>purple/red</item>
@@ -341,6 +344,9 @@ Your internet traffic is not being sent to a remote VPN server.</string>
     </string-array>
 
     <string-array name="themeValues" translatable="false">
+        <item>sunset</item>
+        <item>emerald</item>
+        <item>cosmic</item>
         <item>teal</item>
         <item>blue</item>
         <item>purple</item>
